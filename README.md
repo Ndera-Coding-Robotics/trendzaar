@@ -1,0 +1,1 @@
+# Trendzaar - Your hub for the latest trends in fashion, tech, lifestyle and culture.
