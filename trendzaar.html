@@ -1,43 +1,191 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Trendzaar</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trendzaar | Official Trend Intelligence</title>
     <link rel="stylesheet" href="trendzaar.css" />
   </head>
 
   <body>
-    <!-- Welcome Tab -->
-    <section class="welcome-tab">
-      <div class="welcome-overlay">
-        <div class="welcome-content">
-          <h1>Welcome to TrendZaar</h1>
-          <p>
-            Your hub for the latest trends in fashion, tech, lifestyle and
-            culture.
-          </p>
+    <header class="site-header">
+      <div class="site-container header-inner">
+        <a class="brand" href="#home">Trendzaar</a>
+        <nav class="site-nav">
+          <a href="#insights">Insights</a>
+          <a href="#top-stories">Top Stories</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-          <div class="welcome-buttons">
-            <a href="#explore" class="btn-primary">Explore Trends</a>
-            <a href="#about" class="btn-secondary">Learn More</a>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <span class="eyebrow">Official trend intelligence</span>
+          <h1>Stay ahead with the latest global news and cultural insights.</h1>
+          <p>Trendzaar delivers curated, verified headlines and trend reports for business leaders, creators, and active citizens.</p>
+          <div class="hero-actions">
+            <a href="#top-stories" class="btn-primary">View Today’s Brief</a>
+            <a href="#about" class="btn-secondary">Why Trendzaar?</a>
           </div>
         </div>
+        <div class="hero-cards">
+          <article class="metric-card">
+            <p class="metric-value">8</p>
+            <p class="metric-label">Top stories covered today</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-value">24/7</p>
+            <p class="metric-label">Real-time trend monitoring</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-value">3</p>
+            <p class="metric-label">Industry verticals tracked</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="insight-grid" id="insights">
+        <div class="site-container">
+          <div class="section-header">
+            <p class="eyebrow">Insight spotlight</p>
+            <h2>Signals shaping the market this hour</h2>
+          </div>
+          <div class="grid-cards">
+            <article class="insight-card">
+              <h3>Global geopolitics</h3>
+              <p>U.S. support operations in Iraq highlight new defense dynamics and regional energy security concerns.</p>
+            </article>
+            <article class="insight-card">
+              <h3>Culture & entertainment</h3>
+              <p>Zendaya’s Whitney Houston tribute draws renewed attention to legacy storytelling and premium live experiences.</p>
+            </article>
+            <article class="insight-card">
+              <h3>Innovation pulse</h3>
+              <p>AI-enabled recycling breakthroughs are accelerating sustainable material adoption across consumer and industrial brands.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="top-stories">
+        <div class="site-container">
+          <div class="section-header">
+            <p class="eyebrow">Top stories</p>
+            <h2>Today's most important trend stories</h2>
+          </div>
+          <div class="story-list">
+            <article class="story-card">
+              <span class="story-index">1</span>
+              <div>
+                <h3>U.S. refueling plane crashes in Iraq</h3>
+                <p>A major defense incident raises urgent questions about regional stability and coalition response strategies.</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <span class="story-index">2</span>
+              <div>
+                <h3>Massive airstrikes in Tehran</h3>
+                <p>Military escalation in the Middle East continues to shift diplomatic priorities and energy markets.</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <span class="story-index">3</span>
+              <div>
+                <h3>Trump eases Russian oil sanctions</h3>
+                <p>Policy changes signal potential ripple effects for crude pricing and global supply chains.</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <span class="story-index">4</span>
+              <div>
+                <h3>Chilean architect wins Pritzker Prize</h3>
+                <p>The latest award recognizes visionary design and expanding cultural influence in global architecture.</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <span class="story-index">5</span>
+              <div>
+                <h3>Zendaya’s Whitney Houston tribute</h3>
+                <p>Entertainment momentum builds around iconic music storytelling and event-driven brand campaigns.</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <span class="story-index">6</span>
+              <div>
+                <h3>AI-powered plastics innovation</h3>
+                <p>New materials technology is reshaping sustainability metrics in manufacturing and packaging.</p>
+              </div>
+            </article>
+            <article class="story-card story-card-large">
+              <span class="story-index">7</span>
+              <div>
+                <h3>Dolly Parton reopens Dollywood</h3>
+                <p>Entertainment, tourism, and nostalgia converge in a major cultural reopening story.</p>
+              </div>
+              <img src="images/dollywood.jpg" alt="Dollywood reopening" />
+            </article>
+            <article class="story-card">
+              <span class="story-index">8</span>
+              <div>
+                <h3>Shai Gilgeous-Alexander breaks record</h3>
+                <p>Sports headlines highlight a record-breaking performance and growing fandom momentum.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="site-container about-inner">
+          <div>
+            <p class="eyebrow">About Trendzaar</p>
+            <h2>Professional trend coverage built for leaders.</h2>
+            <p>Trendzaar aggregates the most relevant news across business, lifestyle, entertainment, and innovation. Our editorial focus helps readers turn headlines into actionable context.</p>
+          </div>
+          <div class="about-highlights">
+            <div>
+              <h3>Trusted context</h3>
+              <p>Well-sourced summaries sharpen your view of global developments.</p>
+            </div>
+            <div>
+              <h3>Clear perspective</h3>
+              <p>A clean layout makes complex stories easy to scan and interpret.</p>
+            </div>
+            <div>
+              <h3>Timely updates</h3>
+              <p>Daily trend commentary keeps your knowledge current and relevant.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe-section" id="contact">
+        <div class="site-container subscribe-inner">
+          <div>
+            <h2>Get official Trendzaar updates</h2>
+            <p>Sign up for concise trend alerts delivered directly to your inbox.</p>
+          </div>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email address" />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-container footer-inner">
+        <p>&copy; 2026 Trendzaar. Official trend intelligence for modern audiences.</p>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#top-stories">Stories</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </section>
-
-    <h1>Trendzaar</h1>
-    <h2>Here Are The Top 7 Trending News Of The Day 😶‍🌫️</h2>
-
-    <ul>
-      <li>1. U.S. Refueling Plane Crashes in Iraq...</li>
-      <li>2. Massive Airstrikes in Tehran...</li>
-      <li>3. Trump Eases Russian Oil Sanctions...</li>
-      <li>4. Chilean Architect Wins Pritzker Prize...</li>
-      <li>5. Zendaya’s Whitney Houston Tribute...</li>
-      <li>6. AI-Powered Plastics Innovation...</li>
-      <li>7. Dolly Parton Reopens Dollywood...</li>
-      <img src="images/dollywood.jpg" alt="Dollywood" />
-
-      <li>8. Shai Gilgeous-Alexander Breaks Record...</li>
-    </ul>
+    </footer>
   </body>
 </html>
