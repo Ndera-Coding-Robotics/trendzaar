@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article - TrendZaar News</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect rx='5' ry='5' fill='%23c41e3a' width='100' height='100'/%3E%3Ctext x='50' y='60' font-size='70' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3ET%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      .article-container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+
+      .article-header {
+        margin-bottom: 2rem;
+      }
+
+      .article-meta {
+        display: flex;
+        gap: 1.5rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        color: var(--medium-gray);
+        flex-wrap: wrap;
+      }
+
+      .article-category {
+        display: inline-block;
+        background-color: var(--primary-red);
+        color: var(--white);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+      }
+
+      .article-title {
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        color: var(--dark-black);
+      }
+
+      .article-description {
+        font-size: 1.25rem;
+        color: var(--medium-gray);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .article-image {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .article-body {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--dark-black);
+      }
+
+      .article-body p {
+        margin-bottom: 1.5rem;
+      }
+
+      .back-link {
+        display: inline-block;
+        color: var(--primary-red);
+        text-decoration: none;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        transition: var(--transition);
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      .article-footer {
+        border-top: 2px solid var(--light-gray);
+        padding-top: 2rem;
+        margin-top: 3rem;
+      }
+
+      .related-articles {
+        margin-top: 3rem;
+      }
+
+      .related-articles h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .article-title {
+          font-size: 1.8rem;
+        }
+
+        .article-description {
+          font-size: 1.1rem;
+        }
+
+        .article-body {
+          font-size: 1rem;
+        }
+
+        .article-container {
+          padding: 0 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo -->
+        <div class="navbar-logo">
+          <span class="logo-text">TRENDZAAR</span>
+          <span class="logo-tagline">Stay Informed</span>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a
+              href="index.html?category=World"
+              class="nav-link"
+              data-category="World"
+              >World</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Politics"
+              class="nav-link"
+              data-category="Politics"
+              >Politics</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Business"
+              class="nav-link"
+              data-category="Business"
+              >Business</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Technology"
+              class="nav-link"
+              data-category="Technology"
+              >Technology</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Sports"
+              class="nav-link"
+              data-category="Sports"
+              >Sports</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Entertainment"
+              class="nav-link"
+              data-category="Entertainment"
+              >Entertainment</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Health"
+              class="nav-link"
+              data-category="Health"
+              >Health</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Science"
+              class="nav-link"
+              data-category="Science"
+              >Science</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Travel"
+              class="nav-link"
+              data-category="Travel"
+              >Travel</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html?category=Opinion"
+              class="nav-link"
+              data-category="Opinion"
+              >Opinion</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="article-container">
+      <a href="index.html" class="back-link">← Back to News</a>
+
+      <article id="article" class="article-header">
+        <!-- Article content will be inserted here by JavaScript -->
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 TrendZaar News. All rights reserved.</p>
+        <p>Bringing you the latest news from around the world.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Article content storage (in a real app, this would come from a backend)
+      const allArticles =
+        JSON.parse(localStorage.getItem("trendzaarArticles")) || [];
+
+      /**
+       * Get URL parameter by name
+       */
+      function getUrlParameter(name) {
+        const url = window.location.href;
+        const regex = new RegExp("[?&]" + name + "=([^&#]*)");
+        const results = regex.exec(url);
+        return results === null ? "" : decodeURIComponent(results[1]);
+      }
+
+      /**
+       * Display article content
+       */
+      function displayArticle() {
+        const articleId = parseInt(getUrlParameter("id"));
+        const article = allArticles.find((a) => a.id === articleId);
+
+        if (!article) {
+          document.getElementById("article").innerHTML =
+            '<p style="text-align: center; padding: 2rem; color: #888;">Article not found. <a href="index.html">Go back to home</a></p>';
+          return;
+        }
+
+        const articleHTML = `
+          <div class="article-header">
+            <span class="article-category">${article.category}</span>
+            <h1 class="article-title">${article.title}</h1>
+            <p class="article-description">${article.description}</p>
+            <div class="article-meta">
+              <span>By ${article.author}</span>
+              <span>${new Date(article.publishedAt).toLocaleDateString()}</span>
+              <span>${article.source?.name || "TrendZaar"}</span>
+            </div>
+          </div>
+
+          <img
+            src="${article.urlToImage}"
+            alt="${article.title}"
+            class="article-image"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22%3E%3Crect fill=%22%23e0e0e0%22 width=%22800%22 height=%22500%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-family=%22sans-serif%22 font-size=%2224%22 fill=%22%23888%22%3EImage not available%3C/text%3E%3C/svg%3E'"
+          />
+
+          <div class="article-body">
+            ${article.content
+              .split(".")
+              .filter((s) => s.trim())
+              .map((sentence) => `<p>${sentence.trim()}.</p>`)
+              .join("")}
+          </div>
+
+          <div class="article-footer">
+            <p style="color: var(--medium-gray); font-size: 0.9rem;">
+              This article is from TrendZaar News. All information is provided
+              for informational purposes only.
+            </p>
+          </div>
+        `;
+
+        document.getElementById("article").innerHTML = articleHTML;
+      }
+
+      /**
+       * Setup mobile menu
+       */
+      function setupMobileMenu() {
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+
+        if (hamburger) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          });
+
+          const navLinks = document.querySelectorAll(".nav-link");
+          navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              hamburger.classList.remove("active");
+              navMenu.classList.remove("active");
+            });
+          });
+        }
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        setupMobileMenu();
+        displayArticle();
+      });
+    </script>
+  </body>
+</html>
